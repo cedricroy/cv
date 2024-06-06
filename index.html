@@ -10,294 +10,47 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/vis-timeline/dist/vis-timeline-graph2d.min.css" />
     <link rel="stylesheet" href="style.css">
-    
+
+
 </head>
 <body>
     <div id="content">
-
-    <div id="header" onscroll="scrollMap()">
-        <div class="social-icons">
-            <a href="https://www.linkedin.com/in/roycedric/" target="_blank">
-                <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="https://www.researchgate.net/profile/Cedric-Roy" target="_blank">
-                <i class="fab fa-researchgate"></i>
-            </a>
-           </div>
-        <h1>Cédric Roy</h1>
-        <k style="text-align:justify;" id="welcome">
-            Bienvenue dans mon GéoCV !
-            <br>
-            <br>Vous y découvrirez mon parcours professionnel : du terrain, de la coordination de programmes de conservation d'espèces menacées, de la gestion de bases de données, de SIG et de systèmes d'informations ainsi que de l'analyse de données.    
-        <br>
-        <br>Survolez les éléments de la Time line et des expériences professionnelles ci-contre pour vous déplacer sur la carte. 
-        <br>
-        <br> Vous pouvez également cliquer sur les marqueurs de la carte pour afficher les détails.
-        <br>
-        <br>Vous pouvez également voir quelques exemples de mon travail en cliquant sur certains logos ci-contre.
-        </k>
-         
-    </div>
-    <div id="map"></div>
-    <div id="sidebar" onscroll="scrollMap()">
-        
-        <h3>Expériences professionnelles</h3>
-        <!-- Ajoutez des sections supplémentaires de votre CV ici -->
-        <ul class="job">
-            <img src="images/logo_ana.png" alt="images/logo de l'ANA">
-                <b>Chargé de projet Système d'Information</b>
-                <br>Ana - Conservatoire d'espaces naturels Ariège 
-                <br>Mars 2022 - Aujourd'hui
-                <br>Alzen, Occitanie, France
-                <ul class="job-tasks">
-                    <li>Gestion des bases de données</li>
-                    <div class="comp-icons">
-                        <a href="https://www.postgresql.org/" target="_blank">
-                        <img src="https://www.postgresql.org/media/img/about/press/elephant.png" alt="PostgreSQL">
-                    </a>
-                        <a href="https://postgis.net/" target="_blank">
-                        <img src="https://postgis.net/brand.svg" alt="PostGIS">
-                    </a>
-                        <a href="https://mariadb.org/" target="_blank">
-                        <img src="images/logo_mariadb.png" alt="MariaDB">
-                    </a>
-                        <a href="https://mysql.com/" target="_blank">
-                        <img src="images/logo_mysql.png" alt="MySQL">
-                    </a>
-                </div> 
-                <li>Gestion du Système d'Information Géographique</li>
-                <div class="comp-icons">
-                    <a href="https://qgisplugins.ariegenature.fr/" target="_blank">
-                    <img src="images/logo_qgis.png" alt="QGIS">
+        <div id="header" onscroll="scrollMap()">
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/roycedric/" target="_blank">
+                    <i class="fab fa-linkedin"></i>
                 </a>
-                    <a href="https://ariegenature.maps.arcgis.com/home/index.html" target="_blank">
-                    <img src="images/logo_arcgis.png" alt="ArcGIS">
+                <a href="https://www.researchgate.net/profile/Cedric-Roy" target="_blank">
+                    <i class="fab fa-researchgate"></i>
                 </a>
-                <a href="https://globalmapper.com/" target="_blank">
-                    <img src="images/logo_gm.png" alt="Global Mapper">
-                </a>                        
             </div>
-                    <li>Outils de saisie, de gestion et d'administration des données</li>
-                    <div class="comp-icons">
-                        <a href="https://geonature.ariegenature.fr/geonature" target="_blank">
-                        <img src="images/logo_geonature.png" alt="GeoNature">
-                    </a>
-                        <a href="https://redash.ariegenature.fr/" target="_blank">
-                        <img src="images/logo_redash.png" alt="Redash">
-                    </a>
-                    <a href="https://geoserver.ariegenature.fr/" target="_blank">
-                        <img src="images/logo_geoserver.png" alt="Geoserver">
-                    </a>    
-                    <a href="https://central.sicen.fr/" target="_blank">
-                        <img src="images/logo_odk.png" alt="ODK">
-                    </a>                     
-                </div>
-                 <li>Gestion du parc informatique</li>
-                 <div class="comp-icons">
-                    <a href="https://ariegenature.fr/" target="_blank">
-                    <img src="images/logo_cmd.png" alt="Invite de commande">
-                </a>                     
-                <a href="https://ariegenature.fr/" target="_blank">
-                    <img src="images/logo_ps.svg" alt="Powershell">
-                </a>
-                <a href="https://ariegenature.fr/" target="_blank">
-                    <img src="images/logo_chocolatey.png" alt="Chocolatey">
-                </a>    
-                </div>
-
-                    <li>Gestion du cloud</li>
-                    <div class="comp-icons">
-                        <img src="images/logo_m365.png" alt="Microsoft 365">
-                        <img src="images/logo_azure.png" alt="Azure">
-                           <img src="images/logo_sharepoint.png" alt="Sharepoint">
-                        <img src="images/logo_pbi.png" alt="PowerBI">
-                        <img src="images/logo_pa.png" alt="Power Automate">
-                    </div>
-                    <li>Webmapping</li>
-                    <div class="comp-icons">
-                        <a href="https://leafletjs.com/" target="_blank">
-                        <img src="images/logo_leaflet.png" alt="Leaflet">
-                    </a>
-                        <a href="https://openlayers.org/" target="_blank">
-                        <img src="images/logo_ol.png" alt="OpenLayers">
-                    </a> 
-                    <a href="https://maps.ariegenature.fr/" target="_blank">
-                        <img src="images/logo_mviewer.png" alt="Mviewer">
-                    </a>
-                    <a href="https://geonode.org" target="_blank">
-                        <img src="images/logo_geonode.png" alt="Geonode">
-                    </a>
-                    <a href="https://www.3liz.com/opensource.html" target="_blank">
-                        <img src="images/logo_lizmap.png" alt="Lizmap">
-                    </a>
-                    </div>
-    </ul>
-              
- 
-        </ul>
-        <!-- ... (les autres sections d'emploi ici) ... -->
-        <ul class="job">
-            <img src="images/logo-ofb.png" alt="images/logo de l'OFB">
-            <b>Géomaticien</b> 
-            <br>Office français de la biodiversité 
-            <br>Janvier 2022 - Février 2022
-            <br>Toulouse, Occitanie, France
-            <ul>
-                <li>Développement d'une application sous PostgreSQL/PostGIS et GEO pour le suivi du Grand Hamster</li>
-            </ul>
-            <div class="comp-icons">
-                <a href="https://try.geo.software/fr/geo-software/geo-software-presentation.html" target="_blank">
-                <img src="images/logo_geo.svg" alt="geo">
-            </a>
-            <a href="https://www.postgresql.org/" target="_blank">
-                <img src="https://www.postgresql.org/media/img/about/press/elephant.png" alt="PostgreSQL">
-            </a>
-                <a href="https://postgis.net/" target="_blank">
-                <img src="https://postgis.net/brand.svg" alt="PostGIS">
-            </a>
-            </div>
-        </ul>
-        <ul class="job">
-            <img src="images/logo_taaf.png" alt="images/logo des TAAF">
-            <b>Chargé de conservation du patrimoine naturel de l'île Europa</b>
-            <br>Terres australes et antarctiques françaises (TAAF)
-            <br>Septembre 2020 - Août 2021
-            <br>Île Europa, Îles Eparses-TAAF, France
-            <ul>
-                <li>Inventaires et suivis (oiseaux, reptiles, gastéropodes, orthoptères, rhopalocères, flore patrimoniale)</li>
-                <li>Gestion (inventaire et lutte) des espèces exotiques envahissantes</li>
-                <li>Formation et sensibilisation à l’environnement (visites de découverte de l’île aux différents visiteurs – militaires et civils)</li>
-            </ul>
-        </ul>
-        <ul class="job">
-            <img src="images/logo_cenpaca.png" alt="images/logo du CEN PACA">
-            <b>Chargé de mission conservation de la biodiversité</b> 
-            <br>Conservatoire d'espaces naturels Provence-Alpes-Côte d’Azur
-            <br>Juillet 2012 - Février 2020
-            <br>Sisteron, Provence-Alpes-Côte d'Azure, France
-            <ul class="job-tasks">
-                <li>Gestion du Système d'Information Géographique et des bases de données (en lien avec un informaticien).</li>
-                <li>Coordination régionale de programmes de connaissance et de conservation (Listes rouges, STOC-EPS, ZNIEFF, PNA Cistude d'Europe, PNA Sonneur à ventre jaune).</li>
-                <div class="comp-icons">
-                    <a href="http://91.134.194.222/WebDoc/#3" target="_blank">
-                    <img src="images/logo_cistude.png" alt="PNA">
-                    </a>
-                    <a href="https://www.researchgate.net/publication/350726377_Liste_rouge_regionale_des_oiseaux_nicheurs_de_passage_et_hivernants_de_Provence-Alpes-Cote_d'Azur" target="_blank">
-                        <img src="images/logo_redlist.png" alt="LRR">
-                        </a>
-                    </div>
-                <li>Expertises ornithologiques, herpétologiques et malacologiques.</li>
-                <li>Validation scientifique des données ornithologiques, malacologiques et herpétologiques et de la base de données du CEN PACA et de SILENE-PACA.</li>           
-            </ul>
-        </ul>
-        <ul class="job">
-            <img src="images/logo_bv.png" alt="images/logo de Bretagne Vivante">
-            <b>Ornithologue</b> 
-            <br>Bretagne Vivante - SEPNB
-            <br>Mars 2012 - Juin 2012
-            <br>Brest, Bretagne, France
-            <ul class="job-tasks">
-                <li>Suivi de la reproduction (en bateau, kayak), de l'étude sur l’alimentation des sternes pierregarin, naine, de Dougall et caugek, du gardiennage des colonies.</li>
-                <li>Gestion des espèces exotiques envahissantes.</li>
-            </ul>
-        </ul>
-        <ul class="job">
-            <img src="images/logo_ddt.jpg" alt="images/logo de la DDT37">
-            <b>Technicien</b> 
-            <br>Direction Départementale des Territoires d'Indre-et-Loire
-            <br>Octobre 2011 - Décembre 2011
-            <br>Tours, Centre-Val de Loire, France
-            <ul class="job-tasks">
-                <li>Récolte et analyse des données piézométriques du département.</li>
-            </ul>
-        </ul>
-        <ul class="job">
-            <img src="images/logo_reneco.png" alt="images/logo de Reneco">
-            <b>Chargé de mission ornithologue</b> 
-            <br>Reneco International Wildlife Consultants LLC
-            <br>Mars 2011 - Juin 2011
-            <br>Région du lac Balkash, Kazakhstan
-            <ul class="job-tasks">
-                <li>Inventaires et du suivi de la reproduction de plusieurs populations d’Outarde de Macqueen.</li>
-                <li>Capture et baguage d’individus.</li>
-            </ul>
-        </ul>
-        <ul class="job">
-            <img src="images/logo_dreal.png" alt="images/logo de la DREAL">
-            <b>Technicien écologue</b> 
-            <br>Direction Régionale de l'Environnement, de l'Aménagement et du Logement Haute-Normandie
-            <br>Octobre 2010 - Décembre 2010
-            <br>Rouen, Normandie, France
-            <ul class="job-tasks">
-                <li>Suivi de l'actualisation des ZNIEFF de Normandie : cartographie, gestion de base de données et diffusion des données ZNIEFF.</li>
-            </ul>
-        </ul>
-      
-                <h3>Formations</h3>
-                <ul class="job">
-                    <img src="images/logo_idgeo.png" alt="images/logo de l'université 1">
-                        <b>Méthodes et Techniques des SIG</b>
-                        <br>IDGEO
-                        <br>Septembre 2021 - Mars 2022
-                        <ul class="job-tasks">
-                            <li>Apporter la maîtrise des outils de travail utilisés dans le domaine des SIG.</li>
-                                <li>Former par la pratique intensive des principaux logiciels S.I.G.</li>
-                        </ul>
-                        <div class="comp-icons">
-                            <a href="https://www.postgresql.org/" target="_blank">
-                            <img src="https://www.postgresql.org/media/img/about/press/elephant.png" alt="PostgreSQL">
-                        </a>
-                            <a href="https://postgis.net/" target="_blank">
-                            <img src="https://postgis.net/brand.svg" alt="PostGIS">
-                        </a>
-                        <a>
-                            <img src="images/logo_no.png" alt="">
-                        </a>   
-                        <a href="https://qgis.org/" target="_blank">
-                            <img src="images/logo_qgis.png" alt="QGIS">
-                        </a>
-                            <a href="https://arcgis.com/" target="_blank">
-                            <img src="images/logo_arcgis.png" alt="ArcGIS">
-                        </a>
-                        </div>
-                         <div class="comp-icons">
-                            <a href="https://leafletjs.com/" target="_blank">
-                            <img src="images/logo_leaflet.png" alt="Leaflet">
-                            </a>
-                            <a href="https://openlayers.org/" target="_blank">
-                            <img src="images/logo_ol.png" alt="OpenLayers">
-                            </a> 
-                            <img src="images/logo_no.png" alt="">
-                            </a>   
-                                <a href="https://developer.mozilla.org/fr/docs/Web/HTML" target="_blank">
-                                <img src="images/logo_html.png" alt="HTML">
-                            </a>
-                                <a href="https://developer.mozilla.org/fr/docs/Web/CSS" target="_blank">
-                                <img src="images/logo_css.png" alt="CSS">
-                            </a>
-                            <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript" target="_blank">
-                            <img src="images/logo_js.png" alt="JavaScript"> </a>
-                        </div>
-                </ul>
-           <ul class="job">
-            <img src="images/logo_engees.png" alt="images/logo de l'université 1">
-                <b>Licence professionelle</b>
-                <br>ENGEES Ecole nationale du génie de l'eau et de l'environnement de Strasbourg
-                <br>Septembre 2009 - Juin 2010
-                <ul class="job-tasks">
-                    <li>Eau, Sol, Activités agricoles et Gestion des territoires à forte pression sociétale</li>
-                </ul>
-    
+            <h1>Cédric Roy</h1>
+            <k style="text-align:justify;" id="welcome">
+                Bienvenue dans mon GéoCV !
+                <br><br>
+                Vous y découvrirez mon parcours professionnel : du terrain, de la coordination de programmes de conservation d'espèces menacées, de la gestion de bases de données, de SIG et de systèmes d'informations ainsi que de l'analyse de données.
+                <br><br>
+                Survolez les éléments de la Time line et de la barre latérale ci-contre pour vous déplacer sur la carte.
+                <br><br>
+                Vous pouvez également cliquer sur les marqueurs de la carte pour zoomer sur mes expériences.
+                <br><br>
+                Vous pouvez également voir quelques exemples de mon travail en cliquant sur certains logos ci-contre.
+            </k>
+        </div>
+        <div id="map"></div>
+        <div id="sidebar">
+            <h3>Expériences professionnelles</h3>
+            <div id="job-container"></div> <!-- Conteneur pour les expériences professionnelles -->
+            <h3>Formations</h3>
+            <div id="education-list"></div> <!-- Conteneur pour les formations -->
+        </div>
     </div>
-</div>
-
     <div id="timeline"></div>
 
     <!-- Inclure Leaflet JS -->
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-        <!-- Inclure vis-timeline JS -->
-<script type="text/javascript" src="https://unpkg.com/vis-timeline/standalone/umd/vis-timeline-graph2d.min.js"></script>
+    <!-- Inclure vis-timeline JS -->
+    <script type="text/javascript" src="https://unpkg.com/vis-timeline/standalone/umd/vis-timeline-graph2d.min.js"></script>
     <script src="script.js"></script>
-
 </body>
 </html>
