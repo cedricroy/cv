@@ -160,6 +160,12 @@ var education = [
         title: "Linux : Administration Système et Réseaux, Programmation informatique",
         logo: "images/logo_libralinux.png",
         dates: "Mai 2022",
+        tasks: [
+           "Sécurité SSH",
+           "Gestion des utilisateurs",
+           "Configuration réseau"
+        ],
+
         start: '2022-05-01',
         end: '2022-05-07',
         location: "Téléformation, France"
