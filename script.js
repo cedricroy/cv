@@ -245,7 +245,7 @@ var education = [
     {
         id: 1000,
         name: "Géonat",
-        coords: [43.59710428186471, 1.3492011386158562],
+        coords: [45.99196938741247, 1.0444367353661008],
         title: "Brevet de technicien supérieur agricole (BTSA) Gestion et Protection de la Nature",
         dates: "Septembre 2006 - Juin 2008",
         tasks: [
