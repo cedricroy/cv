@@ -1,142 +1,150 @@
-    body {
-            margin: 0;
-            padding: 0;
-            display: flex;
-            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; /* Utilisation d'une police générique */
-            flex-direction: column;
- }
-        #header {
-            width: 25%;
-            padding: 10px;
-            box-sizing: border-box;
-            overflow-y: disabled;
-            height: 80vh;
-           background-color: #f9f9f9;
-            color: #4f4f4f;
-            text-align: center;
-        }
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; /* Utilisation d'une police générique */
+    display: flex;
+    flex-direction: column;
+}
 
-        #map {
-            height: 80vh;
-            width: 45%;
-        }
+#content {
+    display: flex;
+    flex: 1; /* Pour occuper l'espace restant après le header */
+}
 
-        #sidebar {
-            width: 30%;
-            padding: 20px;
-            box-sizing: border-box;
-            overflow-y: scroll;
-            height: 80vh;
-            background-color: #f9f9f9;
-        }
-        #timeline {
-            width: 99.9%;
-            height: 100%; /* Ajustez cette valeur selon vos besoins */
-            overflow-y: auto; /* Ajoute une barre de défilement verticale si nécessaire */
-            border: 1px solid #ddd;
-            font-size: 8px; /* Taille de police réduite */
-        }
-        h1 {
-            padding: 5px;
-        }
+#header {
+    width: 25%;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    background-color: #f9f9f9;
+    color: #4f4f4f;
+    text-align: center;
+    height: 80vh;
+}
 
-        h2, h3 {
-            padding: 10px;
-            color: #333;
-        }
+#map {
+    height: 80vh;
+    width: 45%;
+}
 
-        p {
-            color: #666;
-        }
+#sidebar {
+    width: 30%;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    height: 80vh;
+    background-color: #f9f9f9;
+}
 
-        k {
-            padding: 10px;
-           color: #4f4f4f;
-           margin-top: 10px;
+#timeline {
+    width: 99%;
+    height: 100%; /* Ajustez cette valeur selon vos besoins */
+    overflow-y: auto; /* Ajoute une barre de défilement verticale si nécessaire */
+    border: 1px solid #ddd;
+    font-size: 8px; /* Taille de police réduite */
+}
 
-        }
-        .job, .education {
-            cursor: disabled;
-            margin-bottom: 10px;
-            padding: 10px;
-            background-color: #fff;
-            border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            transition: background-color 0.3s ease;
-        }
+h1 {
+    padding: 5px;
+}
 
-        .job:hover, .education:hover {
-            background-color: #f0f0f0;
-        }
+h2, h3 {
+    padding: 10px;
+    color: #333;
+}
 
-        .job b, .education b {
-            color: #333;
-        }
+p {
+    color: #666;
+}
 
-        .job ul, .education ul {
-            margin-top: 5px;
-            padding-left: 20px;
-            list-style-type: disc;
-        }
+k {
+    padding: 10px;
+    color: #4f4f4f;
+    margin-top: 10px;
+}
 
-        .job ul li, .education ul li {
-            color: #666;
-        }
-        .job img, .education img {
-            width: 200px; /* Ajustez la taille du images/logo selon vos besoins */
-            margin-right: 20px;
-            border-radius: 5px;
-            display: block;
-            margin: 0 auto; /* Centrer l'image horizontalement */
-        }
+.job, .education {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
 
-        .job-content, .education-content {
-            flex-grow: 1;
-            text-align: justify; /* Texte justifié */
-        }
+.job:hover, .education:hover {
+    background-color: #f0f0f0;
+}
 
-        .job-title, .education-title {
-            font-weight: bold;
-            margin-bottom: 5px;
-        }
+.job b, .education b {
+    color: #333;
+}
 
-        .job-company, .education-institution {
-            color: #666;
-        }
+.job ul, .education ul {
+    margin-top: 5px;
+    padding-left: 20px;
+    list-style-type: disc;
+}
 
-        .job-dates, .education-dates {
-            color: #999;
-        }
+.job ul li, .education ul li {
+    color: #666;
+}
 
-        .job-tasks, .education-details {
-            margin-top: 10px;
-        }
+.job img, .education img {
+    width: 200px; /* Ajustez la taille des images/logo selon vos besoins */
+    margin-right: 20px;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto; /* Centrer l'image horizontalement */
+}
 
-        .job-tasks li, .education-details li {
-            color: #666;
-        }
-        .social-icons {
-            display: flex;
-            justify-content: center;
-            margin-top: 10px;
-        }
-        .social-icons a {
-            font-size: 40px;
-            margin: 0 10px;
-            color: #000;
-        }
-        .comp-icons {
-            display: flex;
-            justify-content: center;
-            margin-top: 5px;
-            margin-bottom: 10px;
-        }
-        .comp-icons img {
-            width: 4vh;
-            height: 4vh;
-            margin: 0 10px;
-        }
-        #content {
-            display: flex;
-        }
-        
+.job-content, .education-content {
+    flex-grow: 1;
+    text-align: justify; /* Texte justifié */
+}
+
+.job-title, .education-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.job-company, .education-institution {
+    color: #666;
+}
+
+.job-dates, .education-dates {
+    color: #999;
+}
+
+.job-tasks, .education-tasks {
+    margin-top: 10px;
+}
+
+.job-tasks li, .education-tasks li {
+    color: #666;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    font-size: 40px;
+    margin: 0 10px;
+    color: #000;
+}
+
+.comp-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.comp-icons img {
+    width: 4vh;
+    height: 4vh;
+    margin: 0 10px;
+}
