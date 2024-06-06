@@ -120,7 +120,7 @@ var jobs = [
         ],
         start: '2010-10-01',
         end: '2010-12-31',
-        logo: "images/logo_reneco.png",
+        logo: "images/logo_dreal.png",
         location: "Région du lac Balkash, Kazakhstan"
 
     }
