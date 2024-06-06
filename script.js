@@ -241,7 +241,7 @@ var education = [
 "Modèles Linéaires Généralisés : Concepts théoriques et utilisation pratique sous R",
 "Analyses multivariées. Concepts théoriques et analyse en pratique sous R"
                 ],
-        logo: "images/logo_aten.png",
+        logo: "images/logo_aten.jpg",
         start: '2013-01-15',
         end: '2013-01-22',
         location: "Montpellier, Occitanie, France"
