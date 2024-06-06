@@ -8,7 +8,7 @@ var jobs = [
         tasks: [
             "Gestion des données (données faune/flore/habitat, sites en gestion, zones humides, etc.)",
             "Bases de données (PostgreSQL, MySQL)",
-            "Applications web (Geonature, Lizmap)",
+            "Applications web (Geonature, Lizmap, Redahs, etc.)",
             "SIG (QGIS, test d’ArcGIS)",
             "Webmapping (Leaflet, Lizmap, OpenLayers)",
             "Informatique (Microsoft 365, gestion matérielle)"
