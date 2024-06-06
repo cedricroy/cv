@@ -6,12 +6,12 @@ var jobs = [
         title: "Chargé de projet Système d'Information",
         dates: "Mars 2022 - Aujourd'hui",
         tasks: [
-            "Gestion des bases de données",
-            "Gestion du Système d'Information Géographique",
-            "Outils de saisie, de gestion et d'administration des données",
-            "Gestion du parc informatique",
-            "Gestion du cloud",
-            "Webmapping"
+            "Gestion des données (données faune/flore/habitat, sites en gestion, zones humides, etc.)",
+            "Bases de données (PostgreSQL, MySQL)",
+            "Applications web (Geonature, Lizmap)",
+            "SIG (QGIS, test d’ArcGIS)",
+            "Webmapping (Leaflet, Lizmap, OpenLayers)",
+            "Informatique (Microsoft 365, gestion matérielle)"
         ],
         start: '2022-03-01',
         end: new Date(),
