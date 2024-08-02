@@ -131,7 +131,7 @@ var education = [
         id: 101,
         name: "ENGEES Ecole nationale du génie de l'eau et de l'environnement de Strasbourg",
         coords: [48.580757545073794, 7.7581963677500845],
-        title: "Licence professionnelle",
+        title: "Licence professionnelle : Agriculture Durable : Eau, Sol, Activités agricoles et Gestion des territoires à forte pression sociétale",
         logo: "images/logo_engees.png",
         dates: "Septembre 2009 - Juin 2010",
         start: '2009-09-01',
