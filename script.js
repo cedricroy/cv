@@ -8,10 +8,10 @@ var jobs = [
         tasks: [
             "Gestion des données (données faune/flore/habitat, sites en gestion, zones humides, etc.)",
             "Bases de données (PostgreSQL, MySQL)",
-            "Applications web (Geonature, Lizmap, Redahs, etc.)",
+            "Applications web (Geonature, Lizmap, Redash, Geonode,etc.)",
             "SIG (QGIS, test d’ArcGIS)",
-            "Webmapping (Leaflet, Lizmap, OpenLayers)",
-            "Informatique (Microsoft 365, gestion matérielle)"
+            "Webmapping (mviewer, Leaflet, OpenLayers)",
+            "Informatique (Microsoft 365 dont Intune, gestion matérielle)"
         ],
         start: '2022-03-01',
         end: new Date(),
